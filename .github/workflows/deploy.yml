@@ -30,7 +30,7 @@ jobs:
           docker buildx create --use || true
           docker buildx build --platform linux/amd64 \
             -t 337367761967.dkr.ecr.us-west-2.amazonaws.com/ecs-flask-app:latest \
-            --push ./ecs-flask-app
+            --push .
 
       - name: Deploy to ECS
         run: |
